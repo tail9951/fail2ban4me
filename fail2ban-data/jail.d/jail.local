@@ -21,3 +21,4 @@ filter = nginx
 bantime = 3600 # ban for 1 hour
 maxretry = 1
 banaction = iptables-docker-user
+            slack-notify

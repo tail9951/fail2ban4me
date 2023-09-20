@@ -12,3 +12,8 @@ You can verify whether the IP addresses have been correctly banned in the table 
 ```
 sudo iptables -L -n -v
 ```
+
+20230920
+
+I add slack-notify with webhook accorfing to this article
+https://github.com/coleturner/fail2ban-slack-action
