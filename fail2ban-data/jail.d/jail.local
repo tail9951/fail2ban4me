@@ -22,3 +22,13 @@ bantime = 3600 # ban for 1 hour
 maxretry = 1
 banaction = iptables-docker-user
             slack-notify
+
+[nginx-forever-ban]
+enabled = true
+port = http,https
+logpath = /container-logs/*/*-json.log
+filter = nginx
+bantime = -1 # ban forever
+maxretry = 3
+banaction = iptables-docker-user
+            slack-notify
